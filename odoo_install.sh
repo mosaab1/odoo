@@ -1,3 +1,4 @@
+#!/bin/bash
 sudo adduser --system --quiet --shell=/bin/bash --home=/opt/odoo --gecos 'odoo' --group odoo
 sudo mkdir /etc/odoo && mkdir /var/log/odoo/
 sudo service postgresql restart
