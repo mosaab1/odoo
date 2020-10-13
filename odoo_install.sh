@@ -2,7 +2,7 @@
 sudo adduser --system --quiet --shell=/bin/bash --home=/opt/odoo --gecos 'odoo' --group odoo
 sudo mkdir /etc/odoo && mkdir /var/log/odoo/
 sudo service postgresql restart
-git clone --depth=1 --branch=13.0 https://github.com/odoo/odoo.git /opt/odoo/odoo
+git clone --depth=1 --branch=14.0 https://github.com/odoo/odoo.git /opt/odoo/odoo
 sudo chown odoo:odoo /opt/odoo/ -R && sudo chown odoo:odoo /var/log/odoo/ -R 
 cd /opt/odoo/odoo && sudo pip3 install -r requirements.txt
 sudo npm install -g less less-plugin-clean-css rtlcss -y
